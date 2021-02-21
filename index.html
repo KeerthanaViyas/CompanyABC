@@ -111,6 +111,17 @@
         <footer>
             <span>Created By XXX</span>
         </footer>
-        <script src="script.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+    $(window).scroll(function(){
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        }
+        else{
+            $('.navbar').removeClass("sticky");
+        }
+    })
+})
+</script>
     </body>
 </html>
